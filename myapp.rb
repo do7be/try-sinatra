@@ -6,5 +6,5 @@ get '/' do
 end
 
 get '/name/:name' do |name|
-  "Hello #{name}!"
+  "Hello #{name}!?"
 end
