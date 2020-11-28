@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
+require_relative './func'
+
 get '/' do
   'Hello world!'
 end
@@ -35,4 +37,16 @@ get '/puts/*' do |str|
   # コンソール出力
   puts "input is #{str}"
   return str
+end
+
+get '/bot', :agent => /googlebot/ do
+  'you are google bot'
+end
+
+get '/bot' do
+  'you are not google bot'
+end
+
+get '/gati/:name' do |name|
+  validate_gati(name)
 end

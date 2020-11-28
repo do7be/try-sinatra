@@ -1,6 +1,7 @@
-require './myapp'
 require 'test/unit'
 require 'rack/test'
+
+require_relative './myapp'
 
 class SinatraHelloworldTest < Test::Unit::TestCase
   include Rack::Test::Methods
