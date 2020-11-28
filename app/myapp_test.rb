@@ -28,4 +28,10 @@ class SinatraHelloworldTest < Test::Unit::TestCase
     get '/calc/1-4'
     assert_equal '-3', last_response.body
   end
+
+  def test_calc_minus_invalid
+    get '/calc/1-a'
+    assert_equal 404, last_response.status
+  end
+
 end

@@ -26,7 +26,8 @@ get '/calc/*+*' do |num1, num2|
   return result.to_s
 end
 
-get '/calc/*-*' do |num1, num2|
+get /\/calc\/([\d]+)-([\d]+)/ do |num1, num2|
+  puts num1, num2
   (num1.to_i - num2.to_i).to_s
 end
 
