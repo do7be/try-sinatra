@@ -20,7 +20,7 @@ get '/markdown_template_page' do
 end
 
 get '/erb_and_md_template_page' do
-  erb :erb_and_md_template_page, :locals => { :md => markdown(:erb_and_md_template_page) }
+  erb :erb_and_md_template_page, locals: { md: markdown(:erb_and_md_template_page) }
 end
 
 get '/calc/*+*' do |num1, num2|
