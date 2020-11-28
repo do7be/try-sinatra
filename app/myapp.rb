@@ -52,5 +52,5 @@ get '/gati/:name' do |name|
 end
 
 get '/tomato/:name' do |name|
-  validate_tomato(name: name).to_s
+  is_tomato?(name: name).to_s
 end
