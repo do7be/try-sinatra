@@ -12,4 +12,8 @@ class FuncTest < Test::Unit::TestCase
     assert_equal true, validate_tomato(name: 'tomato')
   end
 
+  def test_validate_equal
+    assert_equal false, validate_equal(name2: 'do7be2', name1: 'do7be1')
+  end
+
 end
