@@ -50,3 +50,7 @@ end
 get '/gati/:name' do |name|
   validate_gati(name)
 end
+
+get '/tomato/:name' do |name|
+  validate_tomato(name: name).to_s
+end

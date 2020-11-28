@@ -34,5 +34,4 @@ class SinatraHelloworldTest < Test::Unit::TestCase
     get '/calc/1-a'
     assert_equal 404, last_response.status
   end
-
 end
