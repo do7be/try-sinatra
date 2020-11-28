@@ -4,9 +4,12 @@ GEM
     multi_json (1.15.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    power_assert (1.2.0)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     redcarpet (3.5.0)
     ruby2_keywords (0.0.2)
     sinatra (2.1.0)
@@ -20,15 +23,19 @@ GEM
       rack-protection (= 2.1.0)
       sinatra (= 2.1.0)
       tilt (~> 2.0)
+    test-unit (3.3.7)
+      power_assert
     tilt (2.0.10)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack-test (~> 1.1)
   redcarpet (~> 3.5)
   sinatra (~> 2.1)
   sinatra-contrib (~> 2.1)
+  test-unit (~> 3.3)
 
 BUNDLED WITH
    2.1.4
